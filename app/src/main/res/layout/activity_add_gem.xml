@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="boycese.cs.simmons.edu.gemscl.AddGem">
+
+    <TextView
+        android:text="@string/addActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:id="@+id/pageTitleText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gemName"
+        android:id="@+id/gemNameText"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/pageTitleText"
+        android:layout_toLeftOf="@+id/pageTitleText"
+        android:layout_toStartOf="@+id/pageTitleText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gemNameEntry"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/gemNameText"
+        android:layout_toRightOf="@+id/pageTitleText"
+        android:layout_toEndOf="@+id/pageTitleText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gemColor"
+        android:id="@+id/gemColorText"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/gemNameText"
+        android:layout_alignLeft="@+id/gemNameText"
+        android:layout_alignStart="@+id/gemNameText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gemWeight"
+        android:id="@+id/gemWeightText"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/gemColorText"
+        android:layout_toLeftOf="@+id/pageTitleText"
+        android:layout_toStartOf="@+id/pageTitleText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gemColorEntry"
+        android:layout_below="@+id/gemNameEntry"
+        android:layout_alignLeft="@+id/gemNameEntry"
+        android:layout_alignStart="@+id/gemNameEntry"
+        android:layout_alignRight="@+id/gemNameEntry"
+        android:layout_alignEnd="@+id/gemNameEntry" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gemWeightEntry"
+        android:layout_alignBottom="@+id/gemWeightText"
+        android:layout_toRightOf="@+id/pageTitleText"
+        android:layout_alignRight="@+id/gemColorEntry"
+        android:layout_alignEnd="@+id/gemColorEntry" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submitButton"
+        android:id="@+id/addGemSubmit"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/gemWeightText"
+        android:layout_alignLeft="@+id/pageTitleText"
+        android:layout_alignStart="@+id/pageTitleText"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp" />
+
+</RelativeLayout>

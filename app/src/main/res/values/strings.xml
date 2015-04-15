@@ -1,6 +1,19 @@
 <resources>
     <string name="app_name">GemSCL</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">hello world</string>
+    <string name="title">GemSCL</string>
+    <string name="newButtonText">New</string>
+    <string name="searchButtonText">Search</string>
+
+    <string name="addActivityTitle">Add Gem</string>
+    <string name="gemName">Gem Name</string>
+    <string name="gemColor">Color</string>
+    <string name="gemWeight">Weight (ct)</string>
+
+    <string name="submitButton">Submit</string>
+
     <string name="action_settings">Settings</string>
+    <string name="title_activity_add_gem">AddGem</string>
+
 </resources>

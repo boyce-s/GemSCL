@@ -7,32 +7,22 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 
-public class MainActivity extends ActionBarActivity {
-
-    GemDbHelper mDbHelper;
+public class AddGem extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        mDbHelper = new GemDbHelper(this);
-        mDbHelper.open();
-    }
-
-    public void sendMessage(View view) {
-        Intent intent = new Intent(MainActivity.this, AddGem.class);
-        startActivity(intent);
+        setContentView(R.layout.activity_add_gem);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_add_gem, menu);
         return true;
     }
 
@@ -49,5 +39,15 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void insertGem(View view) {
+        EditText name = (EditText) findViewById(R.id.gemNameEntry);
+        String num1 = name.getText().toString();
+        EditText color = (EditText) findViewById(R.id.gemNameEntry);
+        String num2 = color.getText().toString();
+        EditText weight = (EditText) findViewById(R.id.gemNameEntry);
+        String num3 = weight.getText().toString();
+        mDbHelper.createGem(num1, num2, num3);
     }
 }
