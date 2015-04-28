@@ -8,14 +8,21 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.content.ContentValues;
+import android.content.Context;
 
 
 public class AddGem extends ActionBarActivity {
+
+    GemDbHelper mDbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_gem);
+
+        mDbHelper = new GemDbHelper(this);
+        mDbHelper.open();
     }
 
 
@@ -49,5 +56,6 @@ public class AddGem extends ActionBarActivity {
         EditText weight = (EditText) findViewById(R.id.gemNameEntry);
         String num3 = weight.getText().toString();
         mDbHelper.createGem(num1, num2, num3);
+        this.finish();
     }
 }

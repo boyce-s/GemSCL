@@ -11,20 +11,21 @@ import android.widget.Button;
 
 public class MainActivity extends ActionBarActivity {
 
-    GemDbHelper mDbHelper;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mDbHelper = new GemDbHelper(this);
-        mDbHelper.open();
     }
 
-    public void sendMessage(View view) {
+    public void sendMessageAddGem(View view) {
         Intent intent = new Intent(MainActivity.this, AddGem.class);
+        startActivity(intent);
+    }
+
+    public void sendMessageList(View view) {
+        Intent intent = new Intent(MainActivity.this, List.class);
         startActivity(intent);
     }
 

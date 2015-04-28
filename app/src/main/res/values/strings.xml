@@ -4,6 +4,7 @@
     <string name="hello_world">hello world</string>
     <string name="title">GemSCL</string>
     <string name="newButtonText">New</string>
+    <string name="listButtonText">List</string>
     <string name="searchButtonText">Search</string>
 
     <string name="addActivityTitle">Add Gem</string>
@@ -15,5 +16,7 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_add_gem">AddGem</string>
+    <string name="title_activity_list">List</string>
+    <string name="title_activity_list_gem_detail">ListGemDetail</string>
 
 </resources>

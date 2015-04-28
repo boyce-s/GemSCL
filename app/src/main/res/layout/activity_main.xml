@@ -10,8 +10,6 @@
         android:text="@string/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/titleView" />
 
@@ -20,18 +18,27 @@
         android:layout_height="wrap_content"
         android:text="@string/newButtonText"
         android:id="@+id/newButton"
-        android:onClick="sendMessage"
+        android:onClick="sendMessageAddGem"
         android:layout_below="@+id/titleView"
-        android:layout_toLeftOf="@+id/titleView"
-        android:layout_toStartOf="@+id/titleView" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/searchButtonText"
         android:id="@+id/searchButton"
-        android:layout_alignTop="@+id/newButton"
-        android:layout_toRightOf="@+id/titleView"
-        android:layout_toEndOf="@+id/titleView" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listButtonText"
+        android:id="@+id/listButton"
+        android:layout_below="@+id/newButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:onClick="sendMessageList" />
 
 </RelativeLayout>

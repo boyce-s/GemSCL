@@ -90,6 +90,20 @@ public class GemDbHelper {
         mDbHelper.close();
     }
 
+    public Cursor fetchAllGems() {
+
+        return mDb.query(DATABASE_TABLE, new String[]{KEY_ROWID, KEY_NAME,
+                KEY_COLOR, KEY_WEIGHT}, null, null, null, null, null);
+    }
+
+    public Cursor fetchGem(String s, int id) {
+
+        //return mDb.rawQuery(s, new String[]{"7"});
+        return mDb.rawQuery(s, new String[]{"" + id});
+    }
+
+
+
     public long createGem(String name, String color, String weight) {
         ContentValues initialValues = new ContentValues();
         initialValues.put(KEY_NAME, name);
