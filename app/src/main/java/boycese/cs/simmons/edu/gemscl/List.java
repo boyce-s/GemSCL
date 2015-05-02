@@ -1,17 +1,15 @@
 package boycese.cs.simmons.edu.gemscl;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.ListActivity;
+import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.database.Cursor;
 import android.view.View;
-import android.widget.CursorAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
-import android.app.ListActivity;
-import android.content.Intent;
 
 
 public class List extends ListActivity {
@@ -73,5 +71,9 @@ public class List extends ListActivity {
         Cursor cursor = (Cursor) gems.getItem(position);
         intent.putExtra("GEM_ID", cursor.getInt(cursor.getColumnIndex("_id")));
         startActivity(intent);
+    }
+
+    public void returnToPrev(View view) {
+        this.finish();
     }
 }

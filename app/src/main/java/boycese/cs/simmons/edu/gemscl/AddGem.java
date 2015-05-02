@@ -51,9 +51,9 @@ public class AddGem extends ActionBarActivity {
     public void insertGem(View view) {
         EditText name = (EditText) findViewById(R.id.gemNameEntry);
         String num1 = name.getText().toString();
-        EditText color = (EditText) findViewById(R.id.gemNameEntry);
+        EditText color = (EditText) findViewById(R.id.gemColorEntry);
         String num2 = color.getText().toString();
-        EditText weight = (EditText) findViewById(R.id.gemNameEntry);
+        EditText weight = (EditText) findViewById(R.id.gemWeightEntry);
         String num3 = weight.getText().toString();
         mDbHelper.createGem(num1, num2, num3);
         this.finish();

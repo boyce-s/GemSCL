@@ -13,10 +13,14 @@
     <string name="gemWeight">Weight (ct)</string>
 
     <string name="submitButton">Submit</string>
+    <string name="returnButton">Return</string>
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_add_gem">AddGem</string>
     <string name="title_activity_list">List</string>
     <string name="title_activity_list_gem_detail">ListGemDetail</string>
+
+
+    <string name="placeholderText">placeholder</string>
 
 </resources>
